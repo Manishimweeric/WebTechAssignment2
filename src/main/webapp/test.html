@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <br><br>
+
+    <h2>Password Validation Example</h2>
+
+    <form id="passwordForm" >
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" oninput="validatePassword()">
+        <span id="passwordError" class="error"></span>
+
+        <br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" >
+        <span id="confirmPasswordError" class="error"></span>
+
+        <br>
+
+        <label for=names>Confirm Password:</label>
+        <input type="password" id="names" name="names" oninput="validatePassword()">
+        <span id="namess" class="error"></span>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</center>
+<script src="Scriptform.js"></script>
+</body>
+</html>

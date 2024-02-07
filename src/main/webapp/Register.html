@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eric Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    button{
+      width: 150px;
+      height: 50px;
+      background-color: #248af5;
+      color: white;
+      border: 0px solid;
+      font-size: 18px;
+      cursor: pointer;
+      font-family:Cambria Math;
+    }
+    input{
+
+      height: 20px;
+      text-align: center;
+      font-family: "Cambria Math";
+      font-size: 15px;
+      /*border-left: 0px;*/
+      /*border-top: 0px;*/
+      /*border-right: 0px;*/
+      border: 1px solid;
+    }
+    h2{
+      font-family: "Arial Narrow";
+
+    }
+
+    button{
+      width: 200px;
+      height: 35px;
+      font-size: large;
+      cursor: pointer;
+      border: 1px solid;
+      background-color: #248af5;
+      color: white;
+      /*border-radius: 10px;*/
+
+    }
+    .error{
+      color: #931414;
+      font-family: "Arial Narrow";
+    }
+    td{
+      padding: 5px;
+      font-family: "Arial Narrow";
+    }
+    table{
+
+      font-size: 17px;
+      font-family: Cambria Math;
+      padding-bottom: 20px ;
+    }
+    table{
+      border: 0px solid;
+      width: 800px;
+      margin-left: 50px;
+
+    }
+  </style>
+</head>
+<body>
+<hr class="line">
+<div class="container">
+
+  <!--  <div class="logo"> <img src="Shop.jpg" style="width: 250px; height: 200px"> ERIC SHOP</div>-->
+
+
+  <div class="main-body">
+
+    <div class="main-link">
+
+      <div class="logo">
+        <img src="fffffff.jpg" style="width: 65px; height: 70px;border-radius: 100%">
+        <p style="margin-top: -45px; margin-left: 22%" > HR SUPPORTER</p>
+      </div>
+      <div class="link">
+        <a href="index.html">HOME</a> &nbsp;&nbsp;
+        <a href="Register.html" >REGISTER</a>&nbsp;&nbsp;
+        <a href="login.html">LOGIN</a>
+      </div>
+    </div>
+  </div>
+  <div class="second_id">
+    <div class="link-a">
+      &nbsp;&nbsp;&nbsp;&nbsp;<img src="buyer%20Details.png">
+      +249898757597
+      &nbsp;&nbsp;&nbsp;
+
+      <a href="https://www.instagram.com/EricShop" > <img src="instagram.png" >  &nbsp;&nbsp; </a>
+      <a href="https://www.twitter.com/EricShop" ><img src="twitter.png" >&nbsp;&nbsp;</a>
+      <a href="https://www.facebook.com/EricShop" ><img src="feb.png" >&nbsp;&nbsp;</a>
+
+    </div>
+
+
+
+  </div>
+  <div class="more-body">
+
+
+
+  </div>
+
+  <div class="login-main-b">
+    <br><br><br>
+    <h2>APPLICATION  FORM </h2>
+
+    <span class="error" id="Errormessage"></span>
+    <br><br>
+    <form id="Validation" method="post">
+      <table style="">
+
+        <tr><td>National ID </td><td>:</td> <td><input type="number" id="nid" name="nid" oninput="validateNationalID();" required></td>
+          <td>Phone Number </td><td>:</td> <td><input type="number" id="phone_number" name="phone_number" required oninput="validatePhoneNumber()"></td>
+        </tr>
+        <tr> <td>First name</td><td>:</td><td><input type="text" name="firstname" required></td>
+          <td>Location </td><td>:</td> <td><input type="text" name="location" required></td>
+        </tr>
+        <tr><td>Last Name</td> <td>:</td><td><input type="text" name="lastname" required></td>
+          <td>Gender </td><td>:</td> <td>
+
+            <input type="radio" name="gender" value="Male" required>Male
+            <input type="radio" name="gender" value="Female" required>Female
+          </td>
+        </tr>
+        <tr> <td>Email</td> <td>:</td><td><input type="text" id="email" name="email" required oninput="validateEmail()"></td>
+          <td>Photo </td><td>:</td> <td><input type="file" name="photo" required style="width: 207px"></td>
+        </tr>
+        <tr> <td>Birth Date</td><td>:</td> <td><input type="date" id="selectedDate" name="selectedDate" oninput="validateBirthDate()" required style="width: 207px"></td>
+          <td>Password </td><td>:</td> <td><input type="password" id="password" name="password" oninput="validatePassword()" required></td>
+        </tr>
+      </table>
+      <br>
+      <button type="submit">Register</button>
+      <br><br>
+
+
+    </form>
+    <script src="Scriptform.js"></script>
+
+
+  </div>
+  <div id="copyright-b">
+    &#169; 2023 Human Resource Company . All right reserved Powered by Human Resource Company
+
+  </div>
+</div>
+</body>
+</html>
